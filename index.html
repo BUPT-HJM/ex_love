@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Our Love Story</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url(https://www.hackerzhou.me/ex_love/digital-7_mono.ttff') format("truetype");
+		}
+	</style>
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden_dev.js"></script>
+    <script type="text/javascript" src="js/functions_dev.js"></script>
+</head>
+
+<body>
+
+
+<!-- Copyright � 2008. Spidersoft Ltd -->
+<style>
+A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
+A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
+A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
+A.info:hover    {color:green;background:transparent;text-decoration:underline}
+</style>
+<div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
+This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.1.2.1052</b></a> <a class="applink" href="http://www.spidersoft.com"><b>offline browser</b></a>  (Unregistered) on  08/15/15 18:19:16.<br>
+<b>Address:</b> <a class="info" href="https://www.hackerzhou.me/ex_love/">https://www.hackerzhou.me/ex_love/</a><br>
+<b>Title:</b> Our Love Story &nbsp;&bull;&nbsp; <b>Size:</b> 4196 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Wed, 08 Apr 2015 05:19:52 GMT<br></div>
+<!-- /Copyright � 2008. Spidersoft Ltd -->
+
+
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code">
+				<span class="comments">/**</span><br />
+				<span class="space"/><span class="comments">* We are both Fudan SSers and programmers,</span><br />
+				<span class="space"/><span class="comments">* so I write some code to celebrate our 1st anniversary.</span><br />
+				<span class="space"/><span class="comments">*/</span><br />
+				Boy i = <span class="keyword">new</span> Boy(<span class="string">"hackerzhou"</span>);<br />
+				Girl u = <span class="keyword">new</span> Girl(<span class="string">"MaryNee"</span>);<br />
+				<span class="comments">// Nov 2, 2010, I told you I love you. </span><br />
+				i.love(u);<br />
+				<span class="comments">// Luckily, you accepted and became my girlfriend eversince.</span><br />
+				u.accepted();<br />
+				<span class="comments">// Since then, I miss u every day.</span><br />
+				i.miss(u);<br />
+				<span class="comments">// And take care of u and our love.</span><br />
+				i.takeCareOf(u);<br />
+				<span class="comments">// You say that you won't be so easy to marry me.</span><br />
+				<span class="comments">// So I keep waiting and I have confidence that you will.</span><br />
+				<span class="keyword">boolean</span> isHesitate = <span class="keyword">true</span>;<br />
+				<span class="keyword">while</span> (isHesitate) {<br />
+				<span class="placeholder"/>i.waitFor(u);<br />
+				<span class="placeholder"/><span class="comments">// I think it is an important decision</span><br />
+				<span class="placeholder"/><span class="comments">// and you should think it over.</span><br />
+				<span class="placeholder"/>isHesitate = u.thinkOver();<br />
+				}<br />
+				<span class="comments">// After a romantic wedding, we will live happily ever after.</span><br />
+				i.marry(u);<br />
+				i.liveHappilyWith(u);<br />
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						Minyue, I have fallen in love with you for
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+						Love u forever and ever.<br/>
+						<div class="signature">- hackerzhou</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="copyright">
+			Inspired by <a href="http://www.openrise.com/lab/FlowerPower/">FlowerPower</a> project.<br />
+			Copyright © 2014 <a href='http://hackerzhou.me/'>hackerzhou.me</a> 2009-2014
+		</div>
+	</div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var displayMode = 1;
+		var together = new Date();
+		together.setFullYear(2015, 1, 9);
+		together.setHours(10);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		$("#loveHeart").click(function(){
+			displayMode *= -1;
+			timeElapse(together, displayMode);
+		});
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				adjustWordsPosition();
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together, displayMode);
+			setInterval(function () {
+				timeElapse(together, displayMode);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+</body>
+</html>
