@@ -9,71 +9,115 @@
 	<script type="text/javascript" src="js/garden_dev.js"></script>
     <script type="text/javascript" src="js/functions_dev.js"></script>
 </head>
-
+<script>
+window.onload=function()
+{
+	 var arr=['1月9日和你在一起，开启爱的旅程，我跟你表白哈哈，你居然第二天才回我= =，GET景婷表白体，嘿嘿，你以为谁都......因为喜欢你才......','寒假回家啦啦啦啦啦，微爱上天天聊天哦，想你','开学了和你一起看雪，一起走遍宏福的各种大街小巷啦啦啦，嘻嘻，还有小亭子','一起去798艺术区，看到一堆稀奇古怪的东西，还有我受伤了，一直戴着纱布的我，很感谢那段时间你一直陪我，好感动啊~','奋战期中考哈哈哈啊，嗯嗯，都没挂科，还有一起看百花节晚会','先是看了你帅帅的舞啦，THEN吃遍宏福美食行动开启......去了好多地方，我想想，铁木真啦，阿田大虾，庆丰包子，德克士，还有......想不起来了','奋战期末，一起搬家，离开的时候还一起去五道口喝了奶茶吃了冰淇淋，最近看了电影，哈哈哈，虽然并不好看，我离你一步远了哦，我离你两步远了哦......r然后我送你去机场TT想你呢','8月就是现在啦，哈哈哈，刚刚你问我说我在干嘛，我说我在玩电脑啊，突然说什么你有超能力，我以为你猜出来我在做东西要送你呢，七夕快乐啊傻逼，I MISS U','尚未开启','尚未开启','尚未开启','尚未开启']
+	 
+	 var oDiv=document.getElementById('rili');
+	 var aLi=oDiv.getElementsByTagName('li');
+	 
+	 var oTxt=oDiv.getElementsByTagName('div')[1];
+	 
+	 for(var i=0;i<aLi.length;i++)
+	 {
+		 aLi[i].index=i;
+		 aLi[i].onmouseover=function()
+		 {
+			 	for(var i=0;i<aLi.length;i++)
+				{
+					aLi[i].className='';
+				}
+				this.className='active';
+				oTxt.innerHTML=/*'<h2 class="yue">'+(this.index+1)+'月LOVE</h2>*/'<p>'+arr[this.index]+'</p>';
+		 };
+	 }
+	 
+};
+</script>
 <body>
 
 
-<!-- Copyright � 2008. Spidersoft Ltd -->
+
+
 <style>
 A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
 A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
 A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
 A.info:hover    {color:green;background:transparent;text-decoration:underline}
 </style>
-<<<<<<< HEAD
 
-=======
->>>>>>> master
 <embed src="music/kiss the  rain.mp3" hidden="true" autostart="true"></embed> 
 
 	<div id="mainDiv">
-		<div id="content">
-			<div id="code">
-			
-				<span class="comments">/**</span><br />
-				<span class="space"/><span class="comments">* We are both Fudan SSers and programmers,</span><br />
-				<span class="space"/><span class="comments">* so I write some code to celebrate our 1st anniversary.</span><br />
-				<span class="space"/><span class="comments">*/</span><br />
-				Boy i = <span class="keyword">new</span> Boy(<span class="string">"hackerzhou"</span>);<br />
-				Girl u = <span class="keyword">new</span> Girl(<span class="string">"MaryNee"</span>);<br />
-				<span class="comments">// Nov 2, 2010, I told you I love you. </span><br />
-				i.love(u);<br />
-				<span class="comments">// Luckily, you accepted and became my girlfriend eversince.</span><br />
-				u.accepted();<br />
-				<span class="comments">// Since then, I miss u every day.</span><br />
-				i.miss(u);<br />
-				<span class="comments">// And take care of u and our love.</span><br />
-				i.takeCareOf(u);<br />
-				<span class="comments">// You say that you won't be so easy to marry me.</span><br />
-				<span class="comments">// So I keep waiting and I have confidence that you will.</span><br />
-				<span class="keyword">boolean</span> isHesitate = <span class="keyword">true</span>;<br />
-				<span class="keyword">while</span> (isHesitate) {<br />
-				<span class="placeholder"/>i.waitFor(u);<br />
-				<span class="placeholder"/><span class="comments">// I think it is an important decision</span><br />
-				<span class="placeholder"/><span class="comments">// and you should think it over.</span><br />
-				<span class="placeholder"/>isHesitate = u.thinkOver();<br />
-				<br />
-				<span class="comments">// After a romantic wedding, we will live happily ever after.</span><br />
-				i.marry(u);<br />
-				i.liveHappilyWith(u);<br />
-			</div>
+		<div id="content" style="margin-left:0px;">
+			<div id="code" >
+                <span class="comments">我们</span><br />
+                <span class="comments">本来是基本没有交集的两个人</span><br />
+                <span class="comments">然而</span><br />
+                <span class="comments">命运却很奇妙地将我们安排到了一起</span><br />
+                <span class="comments">一切都来得那么巧</span><br />
+                <span class="comments">如果我没有来负责福建聚会，那我就不会与你相识</span><br />
+                <span class="comments">如果同学恶搞的匿名没有存在，那你估计也不会更了解我而相熟</span><br />
+                <span class="comments">如果你并没有因为高数而困扰</span><br />
+                <span class="comments">如果我并没有教你高数</span><br />
+                <span class="comments">这一切的如果</span><br />
+                <span class="comments">假如一个成立</span><br />
+                <span class="comments">估计今天将变得完全不一样</span><br />
+                <span class="comments">但是我们在一起了</span><br />
+                <span class="comments">我们一起去自习</span><br />
+                <span class="comments">一起回宿舍</span><br />
+                <span class="comments">一起吃遍美食</span><br />
+                <span class="comments">一起看好看的电影</span><br />
+                <span class="comments">一起游遍京城</span><br />
+                <span class="comments">我们可以在一起做好多事情</span><br />
+                <span class="comments">我希望我们能一直这样好好地在一起</span><br />
+                <span class="comments">一起珍惜</span><br />
+                <span class="comments">一起克服前面的困难</span><br />
+                <span class="comments">一直牵着手</span><br />
+                <span class="comments">到永远</span><br />
+                <span class="comments">...</span><br />
+                <span class="comments">七夕节快乐，我的可爱宝宝</span><br />
+                <span class="comments" id="last">——————最爱你的男孩hjm</span><br />
+			</div><!--code结束-->
 			<div id="loveHeart">
 				<canvas id="garden"></canvas>
 				<div id="words">
 					<div id="messages">
-						Minyue, I have fallen in love with you for
+						hjt, I have fallen in love with you for
 						<div id="elapseClock"></div>
 					</div>
 					<div id="loveu">
 						Love u forever and ever.<br/>
-						<div class="signature">- hackerzhou</div>
+						<div class="signature">- hjm</div>
 					</div>
 				</div>
-			</div>
-		</div>
+                
+			</div><!--loveHeart结束-->  
+            <div id="rili">
+            <div id="title">LOVE时光-2015</div>
+             <ul>
+             <li  class="active">1月</li>
+             <li>2月</li>
+             <li>3月</li>
+             <li>4月</li>
+             <li>5月</li>
+             <li>6月</li>
+             <li>7月</li>
+             <li>8月</li>
+             <li>9月</li>
+             <li>10月</li>
+             <li>11月</li>
+             <li>12月</li>
+             </ul>
+             <div class="text">
+             
+             </div>
+                
+                </div>
+		</div><!--content结束-->
 		<div id="copyright">
-			Inspired by <a href="http://www.openrise.com/lab/FlowerPower/">FlowerPower</a> project.<br />
-			Copyright © 2014 <a href='http://hackerzhou.me/'>hackerzhou.me</a> 2009-2014
+			在fudan hackzhou的网站基础上修改而成
 		</div>
 	</div>
 	<script type="text/javascript">
@@ -112,7 +156,7 @@ A.info:hover    {color:green;background:transparent;text-decoration:underline}
 				timeElapse(together, displayMode);
 			}, 500);
 
-			adjustCodePosition();
+			/*adjustCodePosition();*/
 			$("#code").typewriter();
 		}
 	</script>
