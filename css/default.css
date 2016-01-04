@@ -8,7 +8,7 @@ body{margin:0;padding:0;background:#ffe;font-size:12px;overflow:auto}
 #elapseClock .digit{font-family:"digit";font-size:36px}
 #loveu{padding:5px;font-size:22px;margin-top:80px;margin-right:120px;text-align:right;display:none}
 #loveu .signature{margin-top:10px;font-size:20px;font-style:italic}
-#code{float:left;width:400px;height:400px;color:#333;font-family:"宋体";font-size:12px;margin-top:100px;margin-left:20px;line-height:20px;margin-top:25px;}
+#code{width:400px;height:400px;color:#333;text-align:center;font-family:"宋体";font-size:12px;margin-top:100px;margin-left:20px;line-height:20px;margin-top:25px;}
 #code .string{color:#2a36ff}
 #code .keyword{color:#7f0055;font-weight:bold}
 #code .placeholder{margin-left:15px}
@@ -20,10 +20,15 @@ body{margin:0;padding:0;background:#ffe;font-size:12px;overflow:auto}
 #copyright{margin-top:50px;text-align:center;width:100%;color:#666;clear:both;padding-top:20px;}
 #errorMsg{width:100%;text-align:center;font-size:24px;position:absolute;top:100px;left:0}
 #copyright a{color:#666}
-#rili{float:left;width:400px;height:625px;}
+#rili{width:400px;height:625px;}
 #rili ul {font-size:20px;margin-top:0px;border-right:1px solid #CCC;width:50px;float:left;list-style-type:none;}
 #rili ul li{height:50px;width:50px;line-height:50px;color:#666;}
 #rili ul .active{color:red;}
 #rili #title{font-size:20px;text-align:center;color:red;padding-left:45px;}
 #rili .text{margin-top:50px;text-indent:2em;margin-left:100px;margin-right:15px;line-height:30px;font-size:15px;font-family:"宋体";color:#666;}
-
+#code,#loveheart,#rili {float: left;}
+@media screen and (max-width: 800px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+  #code {
+  	margin-bottom: 140px;
+  }
+}

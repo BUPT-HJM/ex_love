@@ -1,12 +1,9 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-
-
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <head>
 	<title>Our Love Story</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	
 	<link href="css/default.css" type="text/css" rel="stylesheet">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/garden_dev.js"></script>
@@ -18,10 +15,8 @@ window.onload=function()
 	 var arr=['1月9日和你在一起，开启爱的旅程，我跟你表白哈哈，你居然第二天才回我= =，GET景婷表白体，嘿嘿，你以为谁都......因为喜欢你才......','寒假回家啦啦啦啦啦，微爱上天天聊天哦，想你','开学了和你一起看雪，一起走遍宏福的各种大街小巷啦啦啦，嘻嘻，还有小亭子','一起去798艺术区，看到一堆稀奇古怪的东西，还有我受伤了，一直戴着纱布的我，很感谢那段时间你一直陪我，好感动啊~','奋战期中考哈哈哈啊，嗯嗯，都没挂科，还有一起看百花节晚会','先是看了你帅帅的舞啦，THEN吃遍宏福美食行动开启......去了好多地方，我想想，铁木真啦，阿田大虾，庆丰包子，德克士，还有......想不起来了','奋战期末，一起搬家，离开的时候还一起去五道口喝了奶茶吃了冰淇淋，最近看了电影，哈哈哈，虽然并不好看，我离你一步远了哦，我离你两步远了哦......r然后我送你去机场TT想你呢','8月就是现在啦，哈哈哈，刚刚你问我说我在干嘛，我说我在玩电脑啊，突然说什么你有超能力，我以为你猜出来我在做东西要送你呢，七夕快乐啊傻逼，I MISS U','尚未开启','尚未开启','尚未开启','尚未开启']
 	 
 	 var oDiv=document.getElementById('rili');
-	 var aLi=oDiv.getElementsByTagName('li');
-	 
+	 var aLi=oDiv.getElementsByTagName('li'); 
 	 var oTxt=oDiv.getElementsByTagName('div')[1];
-	 
 	 for(var i=0;i<aLi.length;i++)
 	 {
 		 aLi[i].index=i;
@@ -39,21 +34,17 @@ window.onload=function()
 };
 </script>
 <body>
-
-<center>
-
-
 <style>
 A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
 A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
 A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
 A.info:hover    {color:green;background:transparent;text-decoration:underline}
 </style>
-
-<embed src="music/kiss the  rain.mp3" hidden="true" autostart="true"  loop="-1"></embed> 
-
+	<audio autoplay="autoplay" controls="controls">
+	<source src="music/kiss the  rain.mp3" type="audio/mpeg">
+	</audio> 
 	<div id="mainDiv">
-		<div id="content" style="margin-left:0px;">
+		<div id="content">
 			<div id="code" >
                 <span class="comments">我们</span><br />
                 <span class="comments">本来是基<span class="change">本没有交集</span>的两个人</span><br />
@@ -98,26 +89,24 @@ A.info:hover    {color:green;background:transparent;text-decoration:underline}
                 
 			</div><!--loveHeart结束-->  
             <div id="rili">
-            <div id="title">LOVE时光-2015</div>
-             <ul>
-             <li  class="active">1月</li>
-             <li>2月</li>
-             <li>3月</li>
-             <li>4月</li>
-             <li>5月</li>
-             <li>6月</li>
-             <li>7月</li>
-             <li>8月</li>
-             <li>9月</li>
-             <li>10月</li>
-             <li>11月</li>
-             <li>12月</li>
-             </ul>
-             <div class="text">
-             
-             </div>
-                
-                </div>
+	            <div id="title">LOVE时光-2015</div>
+	             <ul>
+	             <li  class="active">1月</li>
+	             <li>2月</li>
+	             <li>3月</li>
+	             <li>4月</li>
+	             <li>5月</li>
+	             <li>6月</li>
+	             <li>7月</li>
+	             <li>8月</li>
+	             <li>9月</li>
+	             <li>10月</li>
+	             <li>11月</li>
+	             <li>12月</li>
+	             </ul>
+	             <div class="text">
+	             </div>
+            </div>
 		</div><!--content结束-->
 		<div id="copyright">
 			在fudan hackzhou的网站基础上修改而成
@@ -133,7 +122,7 @@ A.info:hover    {color:green;background:transparent;text-decoration:underline}
 		together.setMinutes(43);
 		together.setSeconds(0);
 		together.setMilliseconds(0);
-		
+		adjustRili()
 		$("#loveHeart").click(function(){
 			displayMode *= -1;
 			timeElapse(together, displayMode);
@@ -158,12 +147,10 @@ A.info:hover    {color:green;background:transparent;text-decoration:underline}
 			setInterval(function () {
 				timeElapse(together, displayMode);
 			}, 500);
-
 			/*adjustCodePosition();
 			adjustRiliPosition();*/
 			$("#code").typewriter();
 		}
 	</script>
-    </center>
 </body>
 </html>
