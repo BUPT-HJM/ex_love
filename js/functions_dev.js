@@ -168,12 +168,12 @@ function adjustWordsPosition() {
 	$('#words').css("left", $("#garden").position().left + 70);
 }
 
-function adjustCodePosition() {
+/*function adjustCode() {
 	$('#code').css("margin-top", ($("#garden").height() - $("#code").height()) / 2);
-}
+}*/
 
-function adjustRiliPosition() {
-	$('#Rili').css("width", $(window).width()-$("#garden").width() - $("#code").width());
+function adjustRili() {
+	$('#rili').css("width", $(window).width()-$("#garden").width() - $("#code").width()-50);
 }
 
 function showLoveU() {
